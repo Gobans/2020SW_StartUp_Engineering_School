@@ -37,7 +37,7 @@
                 android:textSize="30sp" />
 
             <Button
-                android:id="@+id/Un"
+                android:id="@+id/plusNege"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:backgroundTint="#8C8CBE"
@@ -147,11 +147,11 @@
             android:layout_weight="1">
 
             <Button
-                android:id="@+id/three"
+                android:id="@+id/one"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:backgroundTint="#8c8c8c"
-                android:text="3"
+                android:text="1"
                 android:textSize="24sp" />
 
             <Button
@@ -163,11 +163,11 @@
                 android:textSize="24sp" />
 
             <Button
-                android:id="@+id/one"
+                android:id="@+id/three"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:backgroundTint="#8c8c8c"
-                android:text="1"
+                android:text="3"
                 android:textSize="24sp" />
 
             <Button

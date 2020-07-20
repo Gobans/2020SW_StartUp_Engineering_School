@@ -16,8 +16,9 @@ class MainActivity : AppCompatActivity() {
         var operator_used = false// 연산하는 중이면 true 안하면 false
         var temp = 0.0 // 연산할 값 저장
         var result = 0.0 // 연산 최종 값 저장
-        var oper_num = 0 //oper_num =1 : plus , 2 = minus ,3 = divide, 4= remainder, 5: equal
+        var oper_num = 0 //oper_num =1 : plus , 2 = minus ,3 = divide, 4= remainder, 5= multiplication
         var oper_continue = false // 연속으로 연산자 입력
+        var dot_used = false
 
         /*
     숫자 버튼을 클릭하면 화면에 표시가된다 (0은 숫자가 0인상태에서 눌러도 반응하지 않는다)
@@ -89,10 +90,57 @@ class MainActivity : AppCompatActivity() {
                     oper_continue = true
                 }
             }
-
-
+            else if(oper_num ==5){
+                if (oper_continue){
+                    result *= temp
+                    textView.text = result.toString()
+                }else{
+                    result += temp
+                    textView.text = "0"
+                    oper_continue = true
+                }
+            }
         }
 
+        fun plusNegative() {
+            var sld = textView.text.toString()
+            if (sld.equals("0")){
+                ;}
+            else if (sld[0] == '-'){
+                sld = sld.substring(sld.lastIndexOf("-")+1)
+                textView.text = sld
+            }
+            else {
+                val temporary = "-$sld"
+                textView.text = temporary
+            }
+        }
+
+        fun addDot() {
+            var sld = textView.text.toString()
+            var sld_len = sld.length - 1
+
+            if ("." in sld){
+                dot_used = true
+            }
+
+            if (sld.equals("0")){
+                ;}
+//            else if (sld[sld_len] == '.'){
+//                ;
+//            }
+            else {
+                if (!dot_used){
+                    val temporary = "$sld."
+                    textView.text = temporary
+                    dot_used = true
+                }
+            }
+        }
+
+        fun checkIsDot(){
+
+        }
 
         val btnOnClickListener = View.OnClickListener {
             when (it.id) {
@@ -103,6 +151,7 @@ class MainActivity : AppCompatActivity() {
                     result = 0.0
                     operator_used = false
                     oper_continue = false
+                    dot_used = false
                 }
                 zero.id -> {typingNumber(0)}
                 one.id -> {typingNumber(1)}
@@ -143,6 +192,17 @@ class MainActivity : AppCompatActivity() {
                     operator_used = false
                     oper_continue = false
                 }
+                multiplication.id ->{
+                    saveNumber()
+                    oper_num = 5
+                    operation()
+                }
+                plusNege.id ->{
+                    plusNegative()
+                }
+                dot.id ->{
+                    addDot()
+                }
             }
         }
 
@@ -162,5 +222,8 @@ class MainActivity : AppCompatActivity() {
         division.setOnClickListener(btnOnClickListener)
         remainder.setOnClickListener(btnOnClickListener)
         equal.setOnClickListener(btnOnClickListener)
+        multiplication.setOnClickListener(btnOnClickListener)
+        plusNege.setOnClickListener(btnOnClickListener)
+        dot.setOnClickListener(btnOnClickListener)
     }
 }

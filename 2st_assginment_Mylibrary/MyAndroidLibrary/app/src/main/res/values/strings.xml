@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MyAndroidLibrary</string>
+    <string name="dolphin">Dolphin</string>
+    <string name="spinner">Spinner</string>
+    <string name="button1">Button</string>
+    <string name="button2">Button</string>
+    <string name="button3">Button</string>
+    <string name="button4">Button</string>
+    <string name="mh_s_library">MH\'s library</string>
+</resources>
