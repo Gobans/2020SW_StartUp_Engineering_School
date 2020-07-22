@@ -1,7 +1,8 @@
 package com.example.myandroidlibrary
 
+import android.content.Intent
 import android.os.Bundle
-import android.util.Log
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
@@ -50,5 +51,38 @@ class MainActivity : AppCompatActivity() {
 //            startActivity(intent)
 //        }
 //
+        val onClickListener = View.OnClickListener {
+            when(it.id){
+                variableBtn.id ->{
+                    val intent = Intent(this, VariableActivity::class.java)
+                    startActivity(intent)
+                }
+
+                controlBtn.id ->{
+                    val intent = Intent(this, ControlActivity::class.java)
+                    startActivity(intent)
+                }
+                textBtn.id ->{
+                    val intent = Intent(this, TextActivity::class.java)
+                    startActivity(intent)
+                }
+                viewBtn.id ->{
+                    val intent = Intent(this, ViewActivity::class.java)
+                    startActivity(intent)
+                }
+                spinnerBtn.id ->{
+                    val intent = Intent(this, SpinnerActivity::class.java)
+                    startActivity(intent)
+                }
+
+
+            }
+        }
+
+        variableBtn.setOnClickListener(onClickListener)
+        controlBtn.setOnClickListener(onClickListener)
+        textBtn.setOnClickListener(onClickListener)
+        viewBtn.setOnClickListener(onClickListener)
+        spinnerBtn.setOnClickListener(onClickListener)
     }
 }

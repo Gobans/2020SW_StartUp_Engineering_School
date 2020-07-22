@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VariableActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom__main"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="134dp"
+                android:gravity="center"
+                android:text="좋아하는 계절을 입력하세요"
+                android:background="@drawable/custom__main"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/seasonText"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#ffffff"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:inputType="textPersonName"
+                android:text="Season" />
+
+            <Button
+                android:id="@+id/imageBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custiom_button"
+                android:layout_margin="10dp"
+                android:text="입력 후 클릭" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                app:srcCompat="@drawable/question" />
+
+            <Button
+                android:id="@+id/backBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custiom_button"
+                android:layout_margin="10dp"
+                android:text="Back" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

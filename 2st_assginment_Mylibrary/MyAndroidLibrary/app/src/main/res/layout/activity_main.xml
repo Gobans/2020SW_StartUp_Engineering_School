@@ -43,35 +43,39 @@
                 app:srcCompat="@drawable/dolphin" />
 
             <Button
-                android:id="@+id/button9"
+                android:id="@+id/variableBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:background="@drawable/custiom_button"
-                android:text="variable" />
+                android:textAllCaps="false"
+                android:text="Variable" />
 
             <Button
-                android:id="@+id/button10"
+                android:id="@+id/controlBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:background="@drawable/custiom_button"
+                android:textAllCaps="false"
                 android:text="Control" />
 
             <Button
-                android:id="@+id/button11"
+                android:id="@+id/textBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:background="@drawable/custiom_button"
-                android:text="funtion" />
+                android:text="WebView"
+                android:textAllCaps="false" />
 
             <Button
-                android:id="@+id/button12"
+                android:id="@+id/viewBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:background="@drawable/custiom_button"
+                android:textAllCaps="false"
                 android:text="View" />
 
             <Button

@@ -7,4 +7,5 @@
     <string name="button3">Button</string>
     <string name="button4">Button</string>
     <string name="mh_s_library">MH\'s library</string>
+    <string name="_1_androidmanifest_xml_n_uses_permission_android_name_android_permission_internet_n_apllication_android_usescleartexttraffic_true_n_n_2_activity_main_xml_n_val_mywebview_webview_findviewbyid_r_id_webview"><![CDATA[1.AndroidManifest.xml \n <uses-permission android:name=\'android.permission.INTERNET/\'> \n apllication에 android:usesCleartextTraffic=\'true\'추가n\n 2.activity_main.xml \n val myWebView: WebView = findViewById(R.id.webview)]]></string>
 </resources>
