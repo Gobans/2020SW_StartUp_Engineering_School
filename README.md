@@ -1,5 +1,5 @@
 ## 2020SW_StartUp_Engineering_School
-University_School
+App Development Training hosted by the university
 
 ## Use Android studio make simple apps
 >1st : Calculator
