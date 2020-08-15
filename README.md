@@ -7,3 +7,6 @@ App Development Training hosted by the university
 >2st : My own library(command language, widget,.. in android studio)
 
 >3st : Set of food recipes
+
+# Lecture materials
+https://github.com/dontbesatisfied/hanyang_enginnering_school
